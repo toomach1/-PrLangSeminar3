@@ -3,7 +3,7 @@
 // произведение чисел от 1 до N.
 
 
-int num = SetNumber("число");
+int num = SetNumber("число N");
 
 int multi = 1;
 for (int i = 1; i <=num; i++)
@@ -11,7 +11,7 @@ for (int i = 1; i <=num; i++)
     multi *= i;
 }
 
-System.Console.WriteLine(multi);
+Print(multi);
 
 
 
@@ -25,3 +25,7 @@ int SetNumber(string str)
     return num;
 }
 
+void Print(int multi)
+{
+    System.Console.WriteLine($"произведение чисел от 1 до {num} = {multi}");
+}
